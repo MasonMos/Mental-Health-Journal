@@ -1937,7 +1937,7 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="button"],
+	/* input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
 	button,
@@ -1975,7 +1975,7 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: #7eaeac;
-		}
+		} */
 
 /* Item */
 
