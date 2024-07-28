@@ -10,6 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/button.css" />
+		<link rel="stylesheet" href="assets/css/card.css" />
+
 	</head>
 	<body class="is-preload">
 
@@ -59,16 +62,9 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Profile</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt"><strong>Mental Health Journal</strong></h2>
+								<p></p>
 							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-							</footer>
-
 						</div>
 					</section>
 
@@ -77,15 +73,70 @@
 						<div class="container">
 
 							<header>
-								<h2>Portfolio</h2>
+								<h2>Prompts for your Journal!</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<button class="button-27 open-button" role="button">Publish a prompt</button>
 
-							<div class="row">
+							<!-- Modal Diagram -->
+							<dialog class="modal" id="modal">
+								<form method="dialog">
+									<h2>Create a Prompt</h2><br>
+									<label for="question">Input Prompt</label>
+									<input type="text" id="question" name="question"><br>
+									<button class="close-button" type="submit">Submit</button>
+								</form>
+							</dialog>
+
+							<dialog class="response-modal" id="response-modal">
+								<form method="dialog">
+									<h2>Create a Prompt</h2><br>
+									<label for="question">Input Response</label>
+									<input type="text" id="question" name="question"><br>
+									<button class="close-button" type="submit">Submit</button>
+								</form>
+							</dialog>
+
+							<div class="grid-container" id="grid-container">
+								<div class="ag-courses_item">
+									<a href="#" class="ag-courses-item_link open-response" >
+									<div class="ag-courses-item_bg"></div>
+							
+									<div class="ag-courses-item_title">
+										Prompt 1
+									</div>
+							
+									<div class="ag-courses-item_date-box">
+										Start:
+										<span class="ag-courses-item_date">
+										04.11.2022
+										</span>
+									</div>
+									</a>
+								</div>
+								<div class="ag-courses_item">
+									<a href="#" class="ag-courses-item_link open-response">
+									<div class="ag-courses-item_bg"></div>
+							
+									<div class="ag-courses-item_title">
+										Prompt 2
+									</div>
+							
+									<div class="ag-courses-item_date-box">
+										Start:
+										<span class="ag-courses-item_date">
+										04.11.2022
+										</span>
+									</div>
+									</a>
+								</div>
+								
+							</div>
+						  
+							 
+
+
+							<!-- <div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
@@ -130,11 +181,11 @@
 								</div>
 							</div>
 
-						</div>
+						</div> -->
 					</section>
 
 				<!-- About Me -->
-					<section id="about" class="three">
+					<!-- <section id="about" class="three">
 						<div class="container">
 
 							<header>
@@ -151,7 +202,7 @@
 							ornare iaculis.</p>
 
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Contact -->
 					<!-- <section id="contact" class="four">
@@ -195,13 +246,7 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal.js"></script> 
 
 	</body>
 </html>
